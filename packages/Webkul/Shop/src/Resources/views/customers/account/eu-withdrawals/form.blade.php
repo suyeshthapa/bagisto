@@ -64,7 +64,7 @@
 
                     <p class="mt-1 text-sm text-zinc-600">
                         @lang('shop::app.eu-withdrawal.form.placed-on',
-                            ['date' => core()->formatDate($order->created_at, 'd M Y')])
+                            ['date' => core()->formatDate($order->created_at)])
                     </p>
 
                     <div class="mt-4 grid gap-2 border-t border-zinc-100 pt-4 text-sm">

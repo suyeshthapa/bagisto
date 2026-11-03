@@ -4514,6 +4514,10 @@ return [
                     'info' => 'Ajustes de unidades y migas de pan de la tienda.',
                     'title' => 'General',
 
+                    'date-format' => [
+                        'title' => 'Date Format',
+                    ],
+
                     'unit-options' => [
                         'info' => 'Establecer opciones de unidades.',
                         'title' => 'Opciones de Unidades',

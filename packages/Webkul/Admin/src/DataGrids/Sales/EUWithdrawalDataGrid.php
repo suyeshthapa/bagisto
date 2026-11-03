@@ -3,7 +3,6 @@
 namespace Webkul\Admin\DataGrids\Sales;
 
 use Illuminate\Database\Query\Builder;
-use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 use Webkul\DataGrid\DataGrid;
 use Webkul\EUWithdrawal\Enums\WithdrawalStatus;
@@ -56,7 +55,7 @@ class EUWithdrawalDataGrid extends DataGrid
             'sortable' => true,
             'closure' => function ($row) {
                 return $row->received_at
-                    ? Carbon::parse($row->received_at)->format('d M Y, H:i T')
+                    ? core()->formatDate($row->received_at, core()->getDateFormat().' H:i T')
                     : '';
             },
         ]);
@@ -128,7 +127,7 @@ class EUWithdrawalDataGrid extends DataGrid
             'sortable' => true,
             'closure' => function ($row) {
                 return $row->confirmation_sent_at
-                    ? Carbon::parse($row->confirmation_sent_at)->format('d M Y, H:i T')
+                    ? core()->formatDate($row->confirmation_sent_at, core()->getDateFormat().' H:i T')
                     : '';
             },
         ]);

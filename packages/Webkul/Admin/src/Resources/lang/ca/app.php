@@ -4514,6 +4514,10 @@ return [
                     'info' => 'Configuració d\'unitats i molla de pa de la botiga.',
                     'title' => 'General',
 
+                    'date-format' => [
+                        'title' => 'Date Format',
+                    ],
+
                     'unit-options' => [
                         'info' => 'Estableix opcions d\'unitats.',
                         'title' => 'Opcions d\'Unitats',

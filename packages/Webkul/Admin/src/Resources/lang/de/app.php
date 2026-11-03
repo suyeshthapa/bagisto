@@ -4514,6 +4514,10 @@ return [
                     'info' => 'Einheiteneinstellungen und Storefront-Breadcrumbs.',
                     'title' => 'Allgemein',
 
+                    'date-format' => [
+                        'title' => 'Date Format',
+                    ],
+
                     'unit-options' => [
                         'info' => 'Einheitsoptionen festlegen.',
                         'title' => 'Einheitsoptionen',

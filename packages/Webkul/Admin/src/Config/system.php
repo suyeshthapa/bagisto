@@ -43,6 +43,28 @@ return [
                 ],
                 'channel_based' => true,
             ],
+            [
+                'name' => 'date_format',
+                'title' => 'admin::app.configuration.index.general.general.date-format.title',
+                'type' => 'select',
+                'default' => 'yyyy_mm_dd',
+                'options' => [
+                    [
+                        'title' => 'YYYY-MM-DD',
+                        'value' => 'yyyy_mm_dd',
+                    ], [
+                        'title' => 'DD/MM/YYYY',
+                        'value' => 'dd_mm_yyyy',
+                    ], [
+                        'title' => 'MM-DD-YYYY',
+                        'value' => 'mm_dd_yyyy',
+                    ], [
+                        'title' => 'Month DD, YYYY',
+                        'value' => 'month_dd_yyyy',
+                    ],
+                ],
+                'channel_based' => true,
+            ],
         ],
     ], [
         'key' => 'general.general.breadcrumbs',

@@ -4514,6 +4514,10 @@ return [
                     'info' => 'Impostazioni delle unità e briciole di pane del negozio.',
                     'title' => 'Generale',
 
+                    'date-format' => [
+                        'title' => 'Date Format',
+                    ],
+
                     'unit-options' => [
                         'info' => 'Imposta le opzioni delle unità.',
                         'title' => 'Opzioni Unità',

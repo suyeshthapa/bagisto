@@ -4514,6 +4514,10 @@ return [
                     'info' => 'הגדרות יחידות ופירורי לחם בחנות.',
                     'title' => 'כללי',
 
+                    'date-format' => [
+                        'title' => 'Date Format',
+                    ],
+
                     'unit-options' => [
                         'info' => 'הגדר אפשרויות יחידות.',
                         'title' => 'אפשרויות יחידות',

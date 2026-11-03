@@ -49,7 +49,7 @@
             </td>
 
             <td style="padding: 8px 0;font-size: 14px;color: #384860;">
-                {{ $withdrawal->received_at->copy()->setTimezone('UTC')->format('d M Y, H:i') }} UTC
+                {{ core()->formatDate($withdrawal->received_at->copy()->setTimezone('UTC'), core()->getDateFormat().' H:i') }} UTC
             </td>
         </tr>
 

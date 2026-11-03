@@ -4514,6 +4514,10 @@ return [
                     'info' => '単位設定とストアフロントのパンくずリスト。',
                     'title' => '一般',
 
+                    'date-format' => [
+                        'title' => 'Date Format',
+                    ],
+
                     'unit-options' => [
                         'info' => 'ユニットオプションを設定します。',
                         'title' => 'ユニットオプション',

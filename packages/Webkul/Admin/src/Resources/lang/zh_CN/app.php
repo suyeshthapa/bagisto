@@ -4514,6 +4514,10 @@ return [
                     'info' => '单位设置和店铺面包屑导航。',
                     'title' => '常规',
 
+                    'date-format' => [
+                        'title' => 'Date Format',
+                    ],
+
                     'unit-options' => [
                         'info' => '设置单位选项。',
                         'title' => '单位选项',

@@ -4514,6 +4514,10 @@ return [
                     'info' => 'Sanidi mipangilio ya vipimo na uwashe au uzime chaguo za Breadcrumbs na Wageni.',
                     'title' => 'Kuu',
 
+                    'date-format' => [
+                        'title' => 'Date Format',
+                    ],
+
                     'unit-options' => [
                         'info' => 'Weka chaguo za vipimo.',
                         'title' => 'Chaguo za Vipimo',

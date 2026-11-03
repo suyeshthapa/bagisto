@@ -4514,6 +4514,10 @@ return [
                     'info' => 'Configurações de unidades e trilha de navegação da loja.',
                     'title' => 'Geral',
 
+                    'date-format' => [
+                        'title' => 'Date Format',
+                    ],
+
                     'unit-options' => [
                         'info' => 'Definir opções de unidades.',
                         'title' => 'Opções de Unidade',
