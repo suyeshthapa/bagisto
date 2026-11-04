@@ -632,10 +632,10 @@ class Core
      * Format date using current channel timezone or Laravel default timezone.
      *
      * @param  \Illuminate\Support\Carbon|string|null  $date
-     * @param  string  $format
+     * @param  string|null  $format
      * @return string
      */
-    public function formatDate($date = null, $format = 'd-m-Y H:i:s')
+    public function formatDate($date = null, $format = null)
     {
         $channel = $this->getCurrentChannel();
 
@@ -647,11 +647,25 @@ class Core
             $date = Carbon::parse($date);
         }
 
+        $format = $format ?: $this->getDateFormat();
         $timezone = $channel->timezone ?: config('app.timezone', 'UTC');
 
         $date->setTimezone($timezone);
 
         return $date->translatedFormat($format);
+    }
+
+    /**
+     * Get the configured date format.
+     */
+    public function getDateFormat(): string
+    {
+        return match ($this->getConfigData('general.general.locale_options.date_format')) {
+            'dd_mm_yyyy' => 'd/m/Y',
+            'mm_dd_yyyy' => 'm-d-Y',
+            'month_dd_yyyy' => 'F j, Y',
+            default => 'Y-m-d',
+        };
     }
 
     /**

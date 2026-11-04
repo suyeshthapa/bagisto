@@ -4514,6 +4514,10 @@ return [
                     'info' => 'Birim ayarları ve mağaza içi gezinti izleri.',
                     'title' => 'Genel',
 
+                    'date-format' => [
+                        'title' => 'Date Format',
+                    ],
+
                     'unit-options' => [
                         'info' => 'Birim seçeneklerini ayarlayın.',
                         'title' => 'Birim Seçenekleri',

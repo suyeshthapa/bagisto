@@ -53,6 +53,9 @@ class OrderDataGrid extends DataGrid
             'filterable' => true,
             'filterable_type' => 'date_range',
             'sortable' => true,
+            'closure' => function ($row) {
+                return core()->formatDate($row->created_at);
+            },
         ]);
 
         $this->addColumn([

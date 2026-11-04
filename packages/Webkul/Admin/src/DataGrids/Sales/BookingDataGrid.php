@@ -84,7 +84,7 @@ class BookingDataGrid extends DataGrid
             'closure' => function ($value) {
                 return Carbon::createFromTimestamp($value->from)
                     ->timezone(config('app.timezone'))
-                    ->format('d M, Y H:iA');
+                    ->format(core()->getDateFormat().' H:iA');
             },
         ]);
 
@@ -99,7 +99,7 @@ class BookingDataGrid extends DataGrid
             'closure' => function ($value) {
                 return Carbon::createFromTimestamp($value->to)
                     ->timezone(config('app.timezone'))
-                    ->format('d M, Y H:iA');
+                    ->format(core()->getDateFormat().' H:iA');
             },
         ]);
 

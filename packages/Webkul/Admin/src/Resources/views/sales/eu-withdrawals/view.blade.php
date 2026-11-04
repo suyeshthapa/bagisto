@@ -76,7 +76,7 @@
                         </p>
 
                         <p class="mt-1 text-sm font-medium text-gray-800 dark:text-white">
-                            {{ $withdrawal->received_at->format('d M Y, H:i T') }}
+                            {{ core()->formatDate($withdrawal->received_at, core()->getDateFormat().' H:i T') }}
                         </p>
                     </div>
                     
@@ -181,7 +181,7 @@
                             </p>
 
                             <p class="mt-1 text-xs text-gray-500 dark:text-gray-500">
-                                {{ $withdrawal->received_at->format('d M Y, H:i T') }}
+                                {{ core()->formatDate($withdrawal->received_at, core()->getDateFormat().' H:i T') }}
                             </p>
                         </div>
                     </li>
@@ -206,7 +206,7 @@
                                 </p>
 
                                 <p class="mt-1 text-xs text-gray-500 dark:text-gray-500">
-                                    {{ $withdrawal->confirmation_sent_at->format('d M Y, H:i T') }}
+                                    {{ core()->formatDate($withdrawal->confirmation_sent_at, core()->getDateFormat().' H:i T') }}
                                 </p>
                             @elseif ($withdrawal->confirmation_error)
                                 <p class="mt-0.5 text-xs text-gray-600 dark:text-gray-400">
@@ -242,7 +242,7 @@
                                 </p>
 
                                 <p class="mt-1 text-xs text-gray-500 dark:text-gray-500">
-                                    {{ $withdrawal->declined_at->format('d M Y, H:i T') }}
+                                    {{ core()->formatDate($withdrawal->declined_at, core()->getDateFormat().' H:i T') }}
                                 </p>
 
                                 @if ($withdrawal->declined_reason)
@@ -272,7 +272,7 @@
                                 </p>
 
                                 <p class="mt-1 text-xs text-gray-500 dark:text-gray-500">
-                                    {{ $withdrawal->refunded_at->format('d M Y, H:i T') }}
+                                    {{ core()->formatDate($withdrawal->refunded_at, core()->getDateFormat().' H:i T') }}
                                 </p>
 
                                 @if ($withdrawal->refund_note)
@@ -319,7 +319,7 @@
                                     </p>
 
                                     <p class="mt-1 text-xs text-gray-500 dark:text-gray-500">
-                                        {{ $withdrawal->final_confirmation_sent_at->format('d M Y, H:i T') }}
+                                        {{ core()->formatDate($withdrawal->final_confirmation_sent_at, core()->getDateFormat().' H:i T') }}
                                     </p>
                                 @else
                                     <p class="mt-0.5 text-xs text-gray-600 dark:text-gray-400">

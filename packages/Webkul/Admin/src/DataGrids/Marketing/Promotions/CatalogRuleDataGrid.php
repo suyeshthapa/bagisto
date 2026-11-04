@@ -62,7 +62,9 @@ class CatalogRuleDataGrid extends DataGrid
             'filterable_type' => 'datetime_range',
             'sortable' => true,
             'closure' => function ($value) {
-                return $value->starts_from ?? '-';
+                return $value->starts_from
+                    ? core()->formatDate($value->starts_from, core()->getDateFormat().' H:i:s')
+                    : '-';
             },
         ]);
 
@@ -74,7 +76,9 @@ class CatalogRuleDataGrid extends DataGrid
             'filterable_type' => 'datetime_range',
             'sortable' => true,
             'closure' => function ($value) {
-                return $value->ends_till ?? '-';
+                return $value->ends_till
+                    ? core()->formatDate($value->ends_till, core()->getDateFormat().' H:i:s')
+                    : '-';
             },
         ]);
 

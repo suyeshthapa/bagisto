@@ -112,7 +112,7 @@
                 </dt>
 
                 <dd class="mt-1 text-sm font-medium text-zinc-900">
-                    {{ $withdrawal->received_at->copy()->setTimezone('UTC')->format('d M Y, H:i') }}
+                    {{ core()->formatDate($withdrawal->received_at->copy()->setTimezone('UTC'), core()->getDateFormat().' H:i') }}
                     <span class="text-zinc-500">UTC</span>
                 </dd>
             </div>
@@ -211,7 +211,7 @@
                     </p>
 
                     <p class="text-xs text-zinc-500">
-                        {{ $withdrawal->received_at->copy()->setTimezone('UTC')->format('d M Y, H:i') }} UTC
+                        {{ core()->formatDate($withdrawal->received_at->copy()->setTimezone('UTC'), core()->getDateFormat().' H:i') }} UTC
                     </p>
                 </div>
             </li>
@@ -250,7 +250,7 @@
                         </p>
 
                         <p class="text-xs text-zinc-500">
-                            {{ $withdrawal->refunded_at->copy()->setTimezone('UTC')->format('d M Y, H:i') }} UTC
+                            {{ core()->formatDate($withdrawal->refunded_at->copy()->setTimezone('UTC'), core()->getDateFormat().' H:i') }} UTC
                         </p>
                     </div>
                 @elseif ($withdrawal->declined_at)

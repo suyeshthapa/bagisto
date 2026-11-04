@@ -4514,6 +4514,10 @@ return [
                     'info' => 'Ustawienia jednostek i okruszki nawigacyjne sklepu.',
                     'title' => 'Ogólne',
 
+                    'date-format' => [
+                        'title' => 'Date Format',
+                    ],
+
                     'unit-options' => [
                         'info' => 'Ustaw opcje jednostek.',
                         'title' => 'Opcje jednostek',

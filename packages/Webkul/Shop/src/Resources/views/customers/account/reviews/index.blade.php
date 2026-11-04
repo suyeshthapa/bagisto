@@ -107,7 +107,7 @@
                                                 class="mt-2.5 text-sm font-medium"
                                                 v-pre
                                             >
-                                                {{ $review->created_at }}
+                                                {{ core()->formatDate($review->created_at) }}
                                             </p>
         
                                             {!! view_render_event('bagisto.shop.customers.account.reviews.created_at.after', ['reviews' => $reviews]) !!}
@@ -157,7 +157,7 @@
                                                     class="mt-1.5 font-normal text-zinc-500 max-md:mt-0 max-md:text-xs"
                                                     v-pre
                                                 >
-                                                    {{ $review->created_at }}
+                                                    {{ core()->formatDate($review->created_at) }}
                                                 </p>
             
                                                 {!! view_render_event('bagisto.shop.customers.account.reviews.created_at.after', ['reviews' => $reviews]) !!}

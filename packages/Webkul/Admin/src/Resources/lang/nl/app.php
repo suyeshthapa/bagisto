@@ -4514,6 +4514,10 @@ return [
                     'info' => 'Eenheidsinstellingen en kruimelpad van de winkel.',
                     'title' => 'Algemeen',
 
+                    'date-format' => [
+                        'title' => 'Date Format',
+                    ],
+
                     'unit-options' => [
                         'info' => 'Stel eenhedensopties in.',
                         'title' => 'Eenheidsopties',

@@ -4514,6 +4514,10 @@ return [
                     'info' => 'Setări pentru unități și pesmeți de navigare în magazin.',
                     'title' => 'General',
 
+                    'date-format' => [
+                        'title' => 'Date Format',
+                    ],
+
                     'unit-options' => [
                         'info' => 'Set units options.',
                         'title' => 'Unit Options',

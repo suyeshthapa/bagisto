@@ -4514,6 +4514,10 @@ return [
                     'info' => 'Réglages des unités et fil d\'Ariane de la boutique.',
                     'title' => 'Général',
 
+                    'date-format' => [
+                        'title' => 'Date Format',
+                    ],
+
                     'unit-options' => [
                         'info' => 'Définir les options d\'unités.',
                         'title' => 'Options d\'unité',

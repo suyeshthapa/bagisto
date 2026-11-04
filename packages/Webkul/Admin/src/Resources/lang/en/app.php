@@ -4514,6 +4514,10 @@ return [
                     'info' => 'Unit settings and storefront breadcrumbs.',
                     'title' => 'General',
 
+                    'date-format' => [
+                        'title' => 'Date Format',
+                    ],
+
                     'unit-options' => [
                         'info' => 'Set units options.',
                         'title' => 'Unit Options',

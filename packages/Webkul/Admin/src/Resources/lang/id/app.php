@@ -4514,6 +4514,10 @@ return [
                     'info' => 'Pengaturan satuan dan remah navigasi toko.',
                     'title' => 'Umum',
 
+                    'date-format' => [
+                        'title' => 'Date Format',
+                    ],
+
                     'unit-options' => [
                         'info' => 'Atur opsi unit.',
                         'title' => 'Opsi Unit',
