@@ -650,6 +650,18 @@ abstract class DataGrid
             foreach ($this->columns as $column) {
                 if ($closure = $column->getClosure()) {
                     $record->{$column->getIndex()} = $closure($record);
+
+                    continue;
+                }
+
+                if (
+                    in_array($column->getType(), ['date', 'datetime'], true)
+                    && ! empty($record->{$column->getIndex()})
+                ) {
+                    $record->{$column->getIndex()} = core()->formatDate(
+                        $record->{$column->getIndex()},
+                        core()->getDateFormat().($column->getType() === 'datetime' ? ' H:i:s' : '')
+                    );
                 }
             }
 

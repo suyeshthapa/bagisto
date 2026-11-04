@@ -660,10 +660,10 @@ class Core
      */
     public function getDateFormat(): string
     {
-        return match ($this->getConfigData('general.general.date_format')) {
+        return match ($this->getConfigData('general.general.locale_options.date_format')) {
             'dd_mm_yyyy' => 'd/m/Y',
             'mm_dd_yyyy' => 'm-d-Y',
-            'month_dd_yyyy' => 'F d, Y',
+            'month_dd_yyyy' => 'F j, Y',
             default => 'Y-m-d',
         };
     }

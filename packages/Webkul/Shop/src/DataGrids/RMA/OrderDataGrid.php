@@ -191,7 +191,7 @@ class OrderDataGrid extends DataGrid
             'filterable' => true,
             'filterable_type' => 'date_range',
             'closure' => function ($row) {
-                return '<span class="text-sm">'.$row->created_at.'</span>';
+                return '<span class="text-sm">'.core()->formatDate($row->created_at).'</span>';
             },
         ]);
     }
